@@ -55,7 +55,7 @@ div#header div#menu {
 div#content {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
-  padding: 0 1.5rem;
+  padding: 0 1.5rem 1.5rem 1.5rem;
 }
 
 div#aboutMe {
@@ -103,7 +103,7 @@ div#footer {
   flex-grow: 1;
   gap: 1rem;
   font-size: 1rem;
-  padding-bottom: 1.5rem;
+  padding: 0 1.5rem 1rem 1.5rem;
 }
 
 div#footer div#connect {
@@ -112,15 +112,20 @@ div#footer div#connect {
   justify-content: center;
   flex-direction: row;
   flex-flow: row wrap;
-  gap: 0 1rem;
+  gap: 1rem;
+  line-height: 1rem;
   text-transform: uppercase;
 }
 
 div#social-links {
-  align-items: flex-start;
+  align-items: center;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: row;
   flex-flow: row wrap;
   gap: 1rem;
+}
+
+.footer-title {
+  font-weight: 700;
 }
