@@ -1,77 +1,70 @@
 html {
   height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 body {
   box-sizing: border-box;
-  background-color: #FFFFFF;
+  background-color: #f3fafe;
   color: #2E2E2E;
   font-family: sans-serif;
   font-weight: 300;
   height: 100%;
   margin: 0;
   padding: 0;
+  max-width: 1500px;
 }
 
 h2 {
   text-transform: uppercase;
+  font-size: 2rem;
+}
+
+div#main {
+  display: flex;
 }
 
 div#header {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  gap: 1rem;
-  padding: 1rem 1rem 0 1rem;
-  background-image: linear-gradient(
-    rgba(255,255,255,0.9),
-    rgba(255,255,255,0.7),
-    rgba(255,255,255,0),
-    rgba(255,255,255,0),
-    rgba(255,255,255,0)
-    ), url("headerbackground.jpg");
-  min-height: 100px;
-  height: 20vw;
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: contain;
+  padding: 50px;
+  flex-grow: 15vw;
+  min-width: 300px;
 }
 
 div#header div#menu {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  flex-flow: row wrap;
-  flex-grow: 1;
-  gap: 0.5rem 1rem;
-  font-size: 1rem;
-  justify-content: flex-end;
-  
+  align-items: left;
+  display: left;
+  gap: 1rem 1rem;
+  font-size: 2rem;
 }
 
 div#menu a {
   background-color: rgba(255, 255, 255, 0.4);
-  border-radius: 0.25rem;
-  padding: 0.05rem 0.2rem;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.2rem;
   box-shadow: 1rem white;
 }
 
 div#content {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
-  padding: 0 1.5rem 1.5rem 1.5rem;
+  padding: 1.5rem 2.5rem 2.5rem 2.5rem;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  margin: 50 px;
+  min-width: 600px;
+  flex-grow: 30vw;
+  flex-wrap: wrap;
+  justify-content: left;
 }
 
 div.section {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  font-family: 'Open Sans', sans-serif;}
+  font-family: 'Open Sans', sans-serif;
+}
 
 div#aboutMeText {
   text-align: left;
@@ -82,7 +75,7 @@ div#aboutMeText {
    border-radius: 25px/25px;
    padding: 0px;
    min-width: 300px;
-   width: 33vw;
+   width: 15vw;
 }
 
 a:link {
@@ -102,29 +95,6 @@ a:active {
   color: #2E2E2E;
 }
 
-div#footer {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-flow: row wrap;
-  flex-grow: 1;
-  gap: 1rem;
-  font-size: 1rem;
-  padding: 0 1.5rem 1rem 1.5rem;
-}
-
-div#footer div#connect {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-flow: row wrap;
-  gap: 1rem;
-  line-height: 1rem;
-  text-transform: uppercase;
-}
-
 div#social-links {
   align-items: center;
   display: flex;
@@ -132,10 +102,6 @@ div#social-links {
   flex-direction: row;
   flex-flow: row wrap;
   gap: 1rem;
-}
-
-.footer-title {
-  font-weight: 700;
 }
 
 .flex-center {
