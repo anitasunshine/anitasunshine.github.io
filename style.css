@@ -16,22 +16,54 @@ body {
   max-width: 1500px;
 }
 
+footer {
+  box-sizing: border-box;
+  background-color: #808080;
+  color: #2E2E2E;
+  font-family: sans-serif;
+  font-weight: 300;
+  height: 150px;
+  margin-top: auto;
+}
+
 h2 {
   text-transform: uppercase;
   font-size: 2rem;
 }
 
-div#main {
-  display: flex;
+h3 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  text-align: center;
 }
 
-div#header {
+div#main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 100%;
+  width: 100%;
+}
+
+div#main #top {
+  display: flex;
+  flex-direction: row;
+}
+
+div#sidebar {
   padding: 50px;
   flex-grow: 15vw;
   min-width: 300px;
 }
 
-div#header div#menu {
+div#connect {
+  align-items: center;
+  display: center;
+  gap: 1rem 1rem;
+  font-size: 1rem;
+}
+
+div#sidebar div#menu {
   align-items: left;
   display: left;
   gap: 1rem 1rem;
@@ -51,8 +83,7 @@ div#content {
   padding: 1.5rem 2.5rem 2.5rem 2.5rem;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  margin: 50 px;
+  margin: 50px;
   min-width: 600px;
   flex-grow: 30vw;
   flex-wrap: wrap;
